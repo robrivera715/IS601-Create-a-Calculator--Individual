@@ -1,17 +1,48 @@
-import math
+def addition(a, b):
+    return a + b
 
-while 1 == 1:
-    print("Enter 'add' to add two number")
-    print("Enter 'mul' to multiply two number")
-    print("Enter 'div' to divide two number")
-    print("Enter 'sub' to subtract two number")
-    print("Enter 'sq' to square a number")
-    print("Enter 's' to get the square root of a number")
-    print("Enter 'quit' to end the program")
-    number = input(" ")
+def subtraction(a, b):
+    return a - b
 
-    if number == "add":
-        num1 = int(input("Enter a valid number"))
-        num2 = int(input("Enter another number"))
-        total1 = str(num1 + num2)
-        print('The total number is ' + total)
+def multiplication(a, b):
+    return a * b
+
+def division(a, b):
+    return a / b
+
+def squaring(a):
+    return a ** 2
+
+def squarerooting(a):
+    return a ** .5
+
+class Calculator:
+    result = 0
+
+    def __init__(self):
+        pass
+
+    def add(self, a, b):
+        self.result = addition(a, b)
+        return self.result
+
+    def subtract(self, a, b):
+        self.result = subtraction(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = squaring(a)
+        return self.result
+
+    def squareroot(self, a):
+        self.result = squarerooting(a)
+        return self.result
+
