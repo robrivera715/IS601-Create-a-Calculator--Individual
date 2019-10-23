@@ -1,5 +1,4 @@
 import unittest
-
 from Calculator import Calculator
 
 class MyTestCase(unittest.TestCase):
@@ -44,6 +43,7 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.squareroot(4), 2)
         self.assertEqual(calculator.result, 2)
+
 
 if __name__ == '__main__':
     unittest.main()
