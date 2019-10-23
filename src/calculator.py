@@ -5,6 +5,7 @@ while 1 == 1:
     print("Enter 'mul' to multiply two number")
     print("Enter 'div' to divide two number")
     print("Enter 'sub' to subtract two number")
+    print("Enter 'sq' to square a number")
     print("Enter 's' to get the square root of a number")
     print("Enter 'quit' to end the program")
     number = input(" ")
