@@ -1,20 +1,20 @@
 def addition(a, b):
-    return a + b
+    return int(a) + int(b)
 
 def subtraction(a, b):
-    return a - b
+    return int(a) - int(b)
 
 def multiplication(a, b):
-    return a * b
+    return int(a) * int(b)
 
 def division(a, b):
-    return a / b
+    return round((int(a) / int(b)),9)
 
 def squaring(a):
-    return a ** 2
+    return int(a)**2
 
 def squarerooting(a):
-    return a ** .5
+    return round((int(a)**.5),8)
 
 class Calculator:
     result = 0
@@ -46,3 +46,9 @@ class Calculator:
         self.result = squarerooting(a)
         return self.result
 
+#class CSVStats(Calculator):
+    #data = []
+
+    #def __init__(self, data_file):
+        #self.data = CsvReader(data_file)
+        #pass
